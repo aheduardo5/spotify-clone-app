@@ -12,17 +12,24 @@ import { Grid, Slider } from '@mui/material';
 function Footer() {
   return (
     <div className='footer'>
-        <div className='footer__left'>
-            <p>Album and song details</p>
+      <div className='footer__left'>
+        <img
+          className='footer_albumLogo'
+          src='https://f4.bcbits.com/img/a1316930334_10.jpg'
+          alt=''></img>
+        <div className='footer__songInfo'>
+          <h4>I don't love you</h4>
+          <p>My Chemical Romance</p>
         </div>
-        <div className='footer__center'>
-            <ShuffleIcon className="footer__green" />
-            <SkipPreviousIcon className="footer__icon" />
-            <PlayCircleOutlineIcon fontSize="large" className="footer__icon" />
-            <SkipNextIcon className="footer__icon" />
-            <RepeatIcon className="footer__green" />
-        </div>
-        <div className='footer__right'>
+      </div>
+      <div className='footer__center'>
+        <ShuffleIcon className="footer__green" />
+        <SkipPreviousIcon className="footer__icon" />
+        <PlayCircleOutlineIcon fontSize="large" className="footer__icon" />
+        <SkipNextIcon className="footer__icon" />
+        <RepeatIcon className="footer__green" />
+      </div>
+      <div className='footer__right'>
         <Grid container spacing={2}>
           <Grid item>
             <PlaylistPlayIcon />
@@ -34,7 +41,7 @@ function Footer() {
             <Slider aria-labelledby="continuous-slider" />
           </Grid>
         </Grid>
-        </div>
+      </div>
     </div>
   )
 }
